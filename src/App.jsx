@@ -9,9 +9,9 @@ function App() {
   const [name, setName] = useState("");
   const [date, setDate] = useState("");
   const [listItems, setListItems] = useState([
-    { name: "irshad", date: "13-03-2024" },
-    { name: "alam", date: "13-03-2024" },
-    { name: "irish", date: "13-03-2024" },
+    { name: "Study", date: "13-03-2024" },
+    { name: "Gym", date: "13-03-2024" },
+    { name: "Game", date: "13-03-2024" },
   ]);
 
   const handelInputChange = (event) => {
