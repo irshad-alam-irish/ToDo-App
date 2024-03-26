@@ -1,0 +1,24 @@
+.containers {
+  margin: 10px;
+  width: 450px;
+  border: 1px solid red;
+  padding: 5px;
+}
+.irish-btn {
+  display: flex;
+  justify-content: center;
+}
+input {
+  width: 90%;
+  padding: 5px;
+  border-radius: 5px;
+}
+.input-cont {
+  display: flex;
+}
+.btns {
+  width: 70px;
+}
+.List-cont {
+  margin: 5px 0;
+}
