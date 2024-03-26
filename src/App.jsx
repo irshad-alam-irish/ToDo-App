@@ -6,8 +6,8 @@ import InputList from "./Components/InputList";
 import { useState } from "react";
 import Congratulation from "./Components/Congratulation";
 function App() {
-  const [name, setName] = useState();
-  const [date, setDate] = useState();
+  const [name, setName] = useState("");
+  const [date, setDate] = useState("");
   const [listItems, setListItems] = useState([
     { name: "irshad", date: "13-03-2024" },
     { name: "alam", date: "13-03-2024" },
@@ -24,6 +24,8 @@ function App() {
     const newListItmes = { name: name, date: date };
     const newItems = [newListItmes, ...listItems];
     setListItems(newItems);
+    setDate("");
+    setName("");
   };
   const handelDeleteClick = (todoName) => {
     const updateList = listItems.filter((itemss) => itemss.name !== todoName);
@@ -34,6 +36,8 @@ function App() {
       <div className="containers">
         <Header />
         <TodoInput
+          name={name}
+          date={date}
           inputChange={handelInputChange}
           dateChange={handelDateChange}
           addButtonClick={HandelAddButtonClick}
