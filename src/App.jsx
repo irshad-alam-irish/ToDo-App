@@ -30,7 +30,7 @@ function App() {
     setListItems(updateList);
   };
   return (
-    <>
+    <div className="main-cont">
       <div className="containers">
         <Header />
         <TodoInput
@@ -42,7 +42,7 @@ function App() {
 
         <InputList listItems={listItems} deleteClick={handelDeleteClick} />
       </div>
-    </>
+    </div>
   );
 }
 
